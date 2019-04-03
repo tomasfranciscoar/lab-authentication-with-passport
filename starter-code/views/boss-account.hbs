@@ -1,0 +1,8 @@
+<h2>The Boss' account</h2>
+{{#if user}}
+<p>Username: {{user.username}}</p>
+<p>Role: {{user.role}}</p>
+{{else}}
+<p>Please <a href="/login">Log In</a> with an Admin's account to see this page</p>
+{{/if}}
+<p></p>

@@ -6,4 +6,8 @@ router.get('/', (req, res, next) => {
   res.render('index');
 });
 
+router.get('/boss-account', (req, res) => {
+  res.render('boss-account', {user: req.user})
+})
+
 module.exports = router;
